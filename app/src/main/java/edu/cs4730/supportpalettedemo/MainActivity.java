@@ -71,7 +71,9 @@ public class MainActivity extends AppCompatActivity {
         if (myBitmap != null && !myBitmap.isRecycled()) {
             //synchronous method, which does work on the main thread and is not recommended
           //  Palette palette = new Palette.Builder(myBitmap).generate();
-            //Aysnchronous method.  Since I didn't use the variable, just the method in the listener, I didn't delcare a variable for it  This line commented out shows the full declaration if needed.
+            //Aysnchronous method.  Since I didn't use the variable,
+            // just the method in the listener, I didn't delcare a variable for it
+            // This line commented out shows the full declaration if needed.
             //AsyncTask<Bitmap, Void, Palette> palette = new Palette.Builder(myBitmap).generate(new Palette.PaletteAsyncListener() {
             new Palette.Builder(myBitmap).generate(new Palette.PaletteAsyncListener() {
                 @Override
